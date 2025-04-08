@@ -7,7 +7,7 @@
 
 ▸ Через браузер - <a href="https://www.tampermonkey.net/" target="_blank">Tampermonkey</a>
 
-[Установить](https://raw.githubusercontent.com/SKANDALlST/BlueVibe/main/Blue%20Vibe-1.0.user.js) в Tampermonkey
+[Установить](https://github.com/SKANDALlST/BlueVibe/raw/refs/heads/main/Blue%20Vibe-1.0.user.js) в Tampermonkey
 
 
 ![Preview](https://github.com/user-attachments/assets/bcd9647f-dea8-4cfd-97c2-8da6f8c5da3a)
