@@ -5,8 +5,8 @@
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
-// @updateURL    https://github.com/SKANDALlST/BlueVibe/edit/main/Blue%20Vibe-1.0.user.js
-// @downloadURL  https://github.com/SKANDALlST/BlueVibe/edit/main/Blue%20Vibe-1.0.user.js
+// @updateURL    https://github.com/SKANDALlST/BlueVibe/raw/refs/heads/main/Blue%20Vibe-1.0.user.js
+// @downloadURL  https://github.com/SKANDALlST/BlueVibe/raw/refs/heads/main/Blue%20Vibe-1.0.user.js
 // @run-at       document-start
 // ==/UserScript==
 
