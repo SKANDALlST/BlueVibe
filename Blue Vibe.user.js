@@ -16,7 +16,7 @@
     const style = document.createElement('style');
     style.textContent = `
 
-:root {
+
     container-name: root;
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
