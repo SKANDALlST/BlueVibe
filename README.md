@@ -4,7 +4,7 @@
  
 
 ▸ Клиент Discord - <a href="https://vencord.dev/download/" target="_blank">Vencord</a> или <a href="https://betterdiscord.app/" target="_blank">Betterdiscord</a><br>
-- Ссылка для Vencord - https://github.com/SKANDALlST/BlueVibe/blob/main/BlueVibe.theme.css
+- Ссылка для Vencord - https://github.com/SKANDALlST/BlueVibe/blob/main/BlueVibe.theme.css [Установить](https://raw.githubusercontent.com/SKANDALlST/BlueVibe/refs/heads/main/BlueVibe.theme.css) 
 - Настройки пользователя > Themes > Online Themes
 
 ▸ Через браузер - <a href="https://www.tampermonkey.net/" target="_blank">Tampermonkey</a>
