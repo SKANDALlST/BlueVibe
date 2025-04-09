@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
