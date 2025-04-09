@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
@@ -24,10 +24,7 @@
 body {
     container-name: body;
 
-    /* font, change to '' for default discord font */
-    --font: 'Segoe UI Light';
-
-    /* sizes */
+     /* sizes */
     --gap: 4px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
 }
