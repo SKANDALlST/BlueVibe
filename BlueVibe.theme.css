@@ -2,7 +2,7 @@
  * @name Blue Vibe 
  * @description a dark blue, customizable discord theme.
  * @author SKANDALIST
- * @version 1.0
+ * @version 1.1
  * @invite YGWDN7Xm
  * @website https://github.com/SKANDALlST/BlueVibe
  * @source https://github.com/SKANDALlST/BlueVibe/blob/main/BlueVibe.theme.css
@@ -18,7 +18,7 @@ body {
     container-name: body;
 
     /* font, change to '' for default discord font */
-    --font: 'gg sans';
+    --font: 'Segoe UI Light';
 
     /* sizes */
     --gap: 4px; /* spacing between panels */
@@ -748,6 +748,9 @@ body {
         --text-feedback-info: red;
         --text-feedback-warning: red;
         --text-tertiary: var(--text-4);
+		
+        --user-profile-overlay-background: var(--bg-4);   /* user sidebar  */
+        --user-profile-overlay-background-hover: var(--bg-4);
 
         --status-danger: var(--red-2);
         --status-danger-background: var(--red-3);
