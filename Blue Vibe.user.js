@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.14
+// @version      1.2
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
@@ -25,7 +25,7 @@ body {
     container-name: body;
 
     /* font, change to '' for default discord font */
-    --font: 'gg sans';
+    --font: 'Segoe UI Light';
 
     /* sizes */
     --gap: 4px; /* spacing between panels */
@@ -33,10 +33,10 @@ body {
 }
 
 .visual-refresh {
-
-
+	
+	
 	/* panel separation */
-    .guilds_c48ade /* server list */,
+    .guilds_c48ade /* server list */, 
     .sidebarList_c48ade /* channel list (includes dm list) */,
     .panels_c48ade /* user panel */,
     .chat_f75fb0 > .subtitleContainer_f75fb0 /* chat titlebar */,
@@ -59,7 +59,7 @@ body {
     .chat_fb64c9 /* new thread panel */,
     .container_a592e1 /* server discovery */,
     .callContainer_cb9592 /* vc container */,
-
+	
     .callContainer__722ff /* stage */ {
         background-color: var(--background-base-lower);
         border-radius: var(--radius-lg);
@@ -396,7 +396,7 @@ body {
         border-radius: var(--radius-md);
     }
 
-    .outer_c0bea0 /* profile outer */,
+    .outer_c0bea0 /* profile outer */, 
     .contentWrapper__08434  /* gif panel */ {
         border-radius: var(--radius-lg);
     }
@@ -545,7 +545,7 @@ body {
     --offline: var(--text-4); /* change to #83838b for default offline color */
 
     /* base colors */
-
+	
 	--red-1: oklch(76% 0.12 0);
     --red-2: oklch(70% 0.12 0);
     --red-3: oklch(64% 0.12 0);
@@ -755,6 +755,9 @@ body {
         --text-feedback-info: red;
         --text-feedback-warning: red;
         --text-tertiary: var(--text-4);
+		
+        --user-profile-overlay-background: var(--bg-4);   /* user sidebar  */
+        --user-profile-overlay-background-hover: var(--bg-4);
 
         --status-danger: var(--red-2);
         --status-danger-background: var(--red-3);
@@ -811,30 +814,30 @@ body {
 
         --green-360: var(--green-2); /* seems to be mostly used by vencord plugins */
         --primary-400: var(--text-4);
-
+		
 		/* code background */
-		.markup pre,
+		.markup pre, 
         .codeBlockText,
-
-
-
-
-
+		
+		
+		
+		
+		
         .hljs {
                   background: var(--custom-code-bg) !important;
-                  border-color: hsl(214, 23%, 18%) !important;
+                  border-color: hsl(214, 23%, 18%) !important; 
 		}
-
+				  
        }
 
         .text_b88801 > strong /* xxx is typing.. */ {
             color: var(--text-3);
         }
-
+		
         .mentioned__5126c:before /* mention message left edge */ {
             background-color: var(--accent-2) !important;
         }
-
+				
         .replying__5126c:before /* reply message left edge */ {
             background-color: var(--text-2) !important;
         }
@@ -842,7 +845,7 @@ body {
         #app-mount .message__5126c.replying__5126c:hover /* override fix for message reply hover */ {
             background: var(--reply-hover);
         }
-
+		
 		.container__87bf1 /* settings checkbutton background */ {
 					background-color: var(--bg-1) !important;
             transition: background-color 0.2s ease;
@@ -864,7 +867,7 @@ body {
         .container__87bf1.checked__87bf1 rect[fill='white'] /* settings checkbutton slider */ {
             fill: var(--text-0) !important;
         }
-
+		
         .dropdownButtonBannerVisible__2637a /* server name over banner dropdown button */ {
             color: var(--text-1);
         }
