@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.21
+// @version      1.23
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
@@ -15,10 +15,12 @@
 
     const themeCSS = `
 
+
 :root {
     container-name: root;
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
+	--border-hover: var(--border-subtle);
 }
 
 body {
@@ -30,10 +32,10 @@ body {
     /* sizes */
     --gap: 4px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+
 }
 
 .visual-refresh {
-	
 	
 	/* panel separation */
     .guilds_c48ade /* server list */, 
@@ -610,7 +612,7 @@ body {
         --background-mod-strong: var(--bg-3);
         --background-base-low: var(--bg-4);
         --background-base-lower: var(--bg-4);
-        --background-base-lowest: var(--bg-4);
+        --background-base-lowest: var(--bg-3);
         --background-surface-high: var(--bg-3);
         --background-surface-higher: var(--bg-3);
         --background-surface-highest: var(--bg-3);
