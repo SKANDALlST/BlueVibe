@@ -1,8 +1,8 @@
 /**
- * @name Blue Vibe 
+ * @name Blue Vibe
  * @description a dark blue, customizable discord theme.
  * @author SKANDALIST
- * @version 1.1
+ * @version 1.2
  * @invite w2UVFXzk
  * @website https://github.com/SKANDALlST/BlueVibe
  * @source https://github.com/SKANDALlST/BlueVibe/blob/main/BlueVibe.theme.css
@@ -12,6 +12,7 @@
     container-name: root;
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
+	--border-hover: var(--border-subtle);
 }
 
 body {
@@ -23,10 +24,10 @@ body {
     /* sizes */
     --gap: 4px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+
 }
 
 .visual-refresh {
-	
 	
 	/* panel separation */
     .guilds_c48ade /* server list */, 
@@ -603,7 +604,7 @@ body {
         --background-mod-strong: var(--bg-3);
         --background-base-low: var(--bg-4);
         --background-base-lower: var(--bg-4);
-        --background-base-lowest: var(--bg-4);
+        --background-base-lowest: var(--bg-3);
         --background-surface-high: var(--bg-3);
         --background-surface-higher: var(--bg-3);
         --background-surface-highest: var(--bg-3);
