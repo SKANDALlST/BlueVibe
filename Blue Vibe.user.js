@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.41
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
@@ -15,7 +15,6 @@
 
     const themeCSS = `
 
-
 :root {
     container-name: root;
     --custom-guild-list-padding: 10px;
@@ -26,7 +25,7 @@
 body {
     container-name: body;
 
-    --font: '';
+    --font: 'Segoe UI Light';
 
     --gap: 5px;
     --divider-thickness: 4px;
@@ -659,7 +658,7 @@ body {
     --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); 
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); 
     --reply: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); 
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); 
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); 
 
 
     /* status indicator colors */
@@ -748,6 +747,8 @@ body {
         --modal-background: var(--bg-4);
         --modal-footer-background: var(--bg-4);
 
+        --message-highlight-background-default: var(--reply);
+        --message-highlight-background-hover: var(--reply-hover);
 
         --background-modifier-hover: var(--hover);
         --background-modifier-selected: var(--active);
@@ -967,6 +968,10 @@ body {
         background-color: var(--accent-2) !important;
     }
 
+    #app-mount ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover /* override fix for message reply hover */ {
+        background: var(--reply-hover);
+    }
+
     ._5126c0cd07f243a0-replying:before {
         background-color: var(--text-2) !important;
     }
@@ -1094,6 +1099,7 @@ body {
     inherits: false;
     initial-value: titlebar;
 }
+
 
     `;
 
