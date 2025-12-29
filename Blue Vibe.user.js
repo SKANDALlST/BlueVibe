@@ -26,7 +26,7 @@
 body {
     container-name: body;
 
-    --font: 'Segoe UI Light';
+    --font: '';
 
     --gap: 5px;
     --divider-thickness: 4px;
