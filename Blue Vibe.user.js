@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
@@ -658,7 +658,7 @@ body {
 
     --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); 
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); 
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); 
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); 
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); 
 
 
@@ -924,7 +924,7 @@ body {
         --scrollbar-thin-thumb: var(--bg-3);
         --scrollbar-thin-track: transparent;
 
-        --message-mentioned-background-default: var(--mention);
+        --message-mentioned-background-default: var( --reply);
         --message-mentioned-background-hover: var(--mention-hover);
 		
 		--message-background-hover: var(--message-hover);
@@ -1009,6 +1009,10 @@ body {
     }
     .e4cb9a9c23f12ca3-headerTitle:hover {
         border-color: var(--text-1) !important;
+    }
+
+    ._034365f2217df5de-flash[data-flash='true'] /* reply message flash */ {
+        background: var(--reply);
     }
 
     ._9293f6b2fc12398a-toolbar {
