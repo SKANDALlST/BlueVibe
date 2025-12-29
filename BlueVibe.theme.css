@@ -2,7 +2,7 @@
  * @name Blue Vibe
  * @description a dark blue, customizable discord theme.
  * @author SKANDALIST
- * @version 1.4
+ * @version 1.41
  * @invite Dr8GJ6WV
  * @website https://github.com/SKANDALlST/BlueVibe
  * @source https://github.com/SKANDALlST/BlueVibe/blob/main/BlueVibe.theme.css
@@ -651,7 +651,7 @@ body {
     --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); 
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); 
     --reply: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); 
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); 
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); 
 
 
     /* status indicator colors */
@@ -740,6 +740,8 @@ body {
         --modal-background: var(--bg-4);
         --modal-footer-background: var(--bg-4);
 
+        --message-highlight-background-default: var(--reply);
+        --message-highlight-background-hover: var(--reply-hover);
 
         --background-modifier-hover: var(--hover);
         --background-modifier-selected: var(--active);
@@ -957,6 +959,10 @@ body {
 
     ._5126c0cd07f243a0-mentioned:before {
         background-color: var(--accent-2) !important;
+    }
+
+    #app-mount ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover /* override fix for message reply hover */ {
+        background: var(--reply-hover);
     }
 
     ._5126c0cd07f243a0-replying:before {
