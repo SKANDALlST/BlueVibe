@@ -18,7 +18,7 @@
 body {
     container-name: body;
 
-    --font: '';
+    --font: 'Segoe UI Light';
 
     --gap: 5px;
     --divider-thickness: 4px;
@@ -736,6 +736,7 @@ body {
         --bg-surface-raised: var(--bg-3);
         --chat-background-default: var(--bg-3);
         --input-background: var(--bg-3);
+		--input-background-default: var(--bg-3);
         --modal-background: var(--bg-4);
         --modal-footer-background: var(--bg-4);
 
@@ -1013,37 +1014,6 @@ body {
     }
 }
 
-/* dms-button.css */
-body {
-    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
-    --dms-icon-svg-size: 90%;
-    --dms-icon-color-before: var(--icon-subtle);
-    --dms-icon-color-after: var(--white);
-    --dms-background-image-url: url('');
-    --dms-background-image-size: cover;
-    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
-}
-
-@property --custom-dms-icon {
-    syntax: 'off | hide | custom';
-    inherits: false;
-    initial-value: custom;
-}
-
-@container body style(--custom-dms-icon: off) {
-    ._6e9f8dce4cc18de3-wrapper[data-list-item-id='guildsnav___home'] > ._6e9f8dce4cc18de3-childWrapper {
-        color: var(--dms-icon-color-before);
-    }
-    ._6e9f8dce4cc18de3-wrapper[data-list-item-id='guildsnav___home']:hover > ._6e9f8dce4cc18de3-childWrapper,
-    ._6e9f8dce4cc18de3-wrapper[data-list-item-id='guildsnav___home']._6e9f8dce4cc18de3-selected > ._6e9f8dce4cc18de3-childWrapper {
-        color: var(--dms-icon-color-after);
-    }
-}
-
-@container body style(--custom-dms-icon: custom) {
-    ._6e9f8dce4cc18de3-wrapper[data-list-item-id='guildsnav___home'] > ._6e9f8dce4cc18de3-childWrapper > svg {
-        display: none;
-    }
     ._6e9f8dce4cc18de3-wrapper[data-list-item-id='guildsnav___home'] > ._6e9f8dce4cc18de3-childWrapper::before {
         content: '';
         display: block;
