@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Vibe
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.61
 // @description  Theme for Discord
 // @author       SKANDALIST
 // @match        *://discord.com/*
@@ -87,7 +87,7 @@
 }
 body {
   container-name:body;
-  --font: '';
+  --font: 'Segoe UI Light';
   --code-font: 'Consolas';
   --gap: 6px;
   --divider-thickness: 4px;
@@ -1431,6 +1431,20 @@ body {
 }
 #app-mount .wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]>.childWrapper_JJ-hgR,#app-mount .wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]:hover>.childWrapper_JJ-hgR,#app-mount .wrapper_JJ-hgR[data-list-item-id="guildsnav___home"].selected_JJ-hgR>.childWrapper_JJ-hgR {
   background-color:#202832!important
+}
+
+[class^="liveShapeRound_"], [class*=" liveShapeRound_"],
+[class^="liveIndicator_"], [class*=" liveIndicator_"] {
+  background-color: var(--red-2) !important;
+}
+
+#app-mount :is([class^="voiceUser_"], [class*=" voiceUser_"]) :is([class^="textBadge_"], [class*=" textBadge_"], [class^="live_"], [class*=" live_"]),
+#app-mount :is([class^="liveBadge_"], [class*=" liveBadge_"]) {
+  background-color: var(--red-2) !important;
+}
+
+.voiceUser_YUoOxm .iconGroup_YUoOxm > .badgeWrapper_wE-IXX > .badge_4guu7-.notification_4guu7- {
+  background-color: var(--red-2);
 }
 
     `;
